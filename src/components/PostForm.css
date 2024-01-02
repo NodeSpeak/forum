@@ -1,0 +1,30 @@
+
+.CommentForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.CommentForm label {
+  margin-bottom: 8px;
+}
+
+.CommentForm input {
+  margin-bottom: 16px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.CommentForm button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.CommentForm button:hover {
+  background-color: #0056b3;
+}
