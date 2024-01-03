@@ -35,7 +35,7 @@ You may also see any lint errors in the console.
 
 
 ## Contribuir
-
+```
 git checkout -b nueva-funcionalidad
 
 git add archivos modificados
@@ -43,6 +43,7 @@ git add archivos modificados
 git commit -m "Añadir nueva funcionalidad"
 
 git push origin nueva-funcionalidad
+```
 
 
 
