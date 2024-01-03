@@ -45,6 +45,9 @@ git commit -m "Añadir nueva funcionalidad"
 git push origin nueva-funcionalidad
 ```
 
+## Licencia
+Este proyecto está bajo la licencia MIT.
+
 
 
 
