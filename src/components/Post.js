@@ -40,7 +40,7 @@ const Post = ({ address, postList, omCommentRemove }) => {
                     <div className='post-container' key={index}>
                         <div className="post">
                             <div className="header-content">
-                                <span className="username">{address}</span>
+                                <span className="username">{comment.user}</span>
                                 <div className='muted'>
                                     <span className="date"> 22m.</span>
                                 </div>
