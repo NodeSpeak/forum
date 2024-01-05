@@ -142,12 +142,12 @@ function App() {
                         <p>Cuenta conectada: {accounts.length > 0 ? accounts[0] : 'No conectado'}</p>
                         <hr className="divider" />
                         <p>Contrato deployado: {accounts.length > 0 ? deployedContract : 'No deployado'}</p>
-                        <button className="logout-button" onClick={handleLogout}>
+                        <button className="btn btn-default" onClick={handleLogout}>
                             Cerrar sesión
                         </button>
                     </div>
                 ) : (
-                    <button className="connect-button" onClick={handleConnectClick}>
+                    <button className="btn btn-default" onClick={handleConnectClick}>
                         Conectar con MetaMask
                     </button>
                 )}
@@ -155,8 +155,8 @@ function App() {
 
             <main>
                 <div className="toggle-buttons">
-                    <button onClick={() => setShowForm(true)}>Crear Post</button>
-                    <button onClick={() => setShowForm(false)}>Posts</button>
+                    <button  className="btn btn-default" onClick={() => setShowForm(true)}>Crear Post</button>
+                    <button  className="btn btn-default" onClick={() => setShowForm(false)}>Posts</button>
                 </div>
 
                 {web3 && (
