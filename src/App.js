@@ -105,7 +105,7 @@ function App() {
         try {
             if (contract && accounts.length > 0) {
                 await contract.methods.deleteComment(index).send({ from: accounts[0] });
-                getPosts();
+                getPosts(); 
             }
         } catch (error) {
             console.error('Error al eliminar el comentario del contrato:', error);
