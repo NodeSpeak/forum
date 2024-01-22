@@ -90,7 +90,7 @@ function App() {
         }
     };
 
-    const getComments = async () => {
+    const getPosts = async () => {
         try {
             if (contract && accounts.length > 0) {
                 const commentsArray = await contract.methods.getAllComments().call();
@@ -105,7 +105,7 @@ function App() {
         try {
             if (contract && accounts.length > 0) {
                 await contract.methods.deleteComment(index).send({ from: accounts[0] });
-                getComments();
+                getPosts();
             }
         } catch (error) {
             console.error('Error al eliminar el comentario del contrato:', error);
@@ -131,7 +131,7 @@ function App() {
     }, [web3]);
 
     useEffect(() => {
-        getComments();
+        getPosts();
     }, [contract, accounts]);
 
     return (
